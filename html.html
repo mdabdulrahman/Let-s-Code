@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="lcon-code.png">
+  <meta name="author" content="Mohamed Abdul Rahman " >
+    <meta name="theme-color" content="#DF9CF9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>HTML Coures</title>
+  <!-- G font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<!-- Font awesome icon Link -->
+<script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<!-- External Files -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+<link rel="stylesheet" href="html.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+				<!-- Loading Screen -->
+ <div id="loader">
+  				<img src="img/load.gif" alt="">
+  </div>
+  <div id="content">
+  <!--Banner starts-->
+<div id="banner">
+ <ul>
+ <li > <h1><i id="bar" onclick="menuOpen()" class="fas fa-bars"></i><i id="wg" onclick="menuClose()" class="fas fa-times"></i></h1></li>
+ <li><h1 id="lets"> Let's Code <i class="fas fa-code"></i></h1></li>
+ <li id="BanUsername"><h2><i class="fa fa-user"></i>  </h2></li>
+</ul>
+</div>
+<!--menu starts-->
+ <div id="menu">
+   <h1>Menu</h1> 
+   <ul id="menuLi">
+    <li><a href="index.html"><i class="fas fa-laptop-house"></i> Home</a></li>  
+    <li><a href="html.html"><i class="fab fa-html5"></i> Learn HTML</a></li>
+    <li><a href="css.html"><i class="fab fa-css3-alt"></i> Learn CSS</a></li>
+    <li><a href="js.html"><i class="fab fa-js"></i> Learn Javascript</a></li>
+    <li><a href="playground.html"><i class="fab fa-js"></i> Code Playground</a></li>
+ <!--    <li><a href="projectideas.html"><i class="fas fa-lightbulb"></i> Project Ideas</a></li> -->
+    <li><a href="feedback.html"><i class="far fa-comment-alt"></i> Feedback</a></li>  
+
+  </ul> 
+ </div>
+ <!-- Start course section -->
+ <div id="startCourse">
+   <h1><i class="fab fa-html5"></i>Learn HTML</h1>  
+   <button onclick="window.location.href ='HtmlCourses/html-1.html'">Start Now</button>
+ </div>
+ <!-- lessons have module id for full course and one id for each course box -->
+ <!-- module id for every 3 one id boxes -->
+ <span><h1 style="text-align:center;">Lessons</h1></span>
+ <div id="module">
+         <div id="one" class="oneh1">
+           
+            <h2>1.Introduction To HTML</h2>           
+            <p>In this Module, You will learn about html elements and tags</p>
+        <button onclick="window.location. href='HtmlCourses/html-1.html'">Learn it</button>
+         </div> 
+          
+         <div id="one" class="oneh2">
+             <h2>2.HTML Attributes</h2>
+             <p>In this Module, You will learn about html Attributes</p>
+         <button onclick="window.location. href='HtmlCourses/html-2.html'">Learn it</button>
+         </div>
+           
+         <div id="one" class="oneh3">
+           <h2>3.HTML Style</h2>
+             <p>The HTML style attribute is used to add styles to an element, such as color, font, size, and more. </p>
+         <button onclick="window.location.href='HtmlCourses/html-3.html'">Learn it</button>
+         </div>  
+         </div>
+         
+         <div  id="module">
+         <div id="one" class="oneh4">
+            <h2>4.HTML Images</h2>
+            
+              
+            <p>Images can improve the design and the appearance of a web pages. </p>
+        <button>Learn it</button>
+         </div> 
+          
+         <div id="one" class="oneh5">
+             <h2>5.HTML Link</h2>
+             <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+         <button>Learn it</button>
+         </div>
+           
+         <div id="one" class="oneh6">
+           <h2>6.HTML Lists</h2>
+             <p> HTML lists allow web developers to group a set of related items in lists.</p>
+         <button>Learn it</button>
+         </div>  
+         </div>
+         
+         <div id="module">
+         <div id="one" class="oneh7">
+            <h2> 7.HTML Tables</h2>
+            <br>
+              
+            <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+        <button>Learn it</button>
+         </div> 
+          
+         <div id="one" class="oneh8">
+             <h2>8.HTML Text Formatting</h2>
+             <p>HTML contains several elements for defining text with a special meaning</p>
+         <button>Learn it</button>
+         </div>
+           
+         <div id="one" class="oneh9">
+           <h2>9.HTML Block and Inline Elements</h2>
+             <p>Every HTML element has a default display value, depending on what type of element it is.
+There are two display values: block and inline.</p>
+         <button>Learn it</button>
+         </div> 
+         
+         </div>
+         <div id="module">
+          <div id="one" class="oneh10">
+             <h2>10.HTML Comment Tag</h2>
+             <br>
+               
+             <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+         <button>Learn it</button>
+          </div> 
+           
+          <div id="one" class="oneh11">
+              <h2>11.HTML Headings</h2>
+              <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+          <button>Learn it</button>
+          </div>
+            
+          <div id="one" class="oneh12">
+            <h2>12.HTML Paragraphs</h2>
+              <p>The HTML element defines a paragraph.  A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+          <button>Learn it</button>
+          </div> 
+          
+          </div>
+          <div id="module">
+            <div id="one" class="oneh13">
+               <h2>13.HTML Images</h2>
+               <br>
+                 
+               <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+           <button>Learn it</button>
+            </div> 
+             
+            <div id="one" class="oneh14">
+                <h2>14.HTML Background Images</h2>
+                <p>A background image can be specified for almost any HTML element.</p>
+            <button>Learn it</button>
+            </div>
+              
+            <div id="one" class="oneh15">
+              <h2>15.HTML <code><picture></code> Element</h2>
+                <p>The HTML <code><picture></code> element allows you to display different pictures for different devices or screen sizes.</p>
+            <button>Learn it</button>
+            </div> 
+            
+            </div>
+            <!-- Footer -->
+            <footer>
+              <div id="foot">
+                  <div class="info">
+                <h4>Let's Code <i class="fas fa-code"></i></h4>			
+                <p>This is a Learning Website <b></b>.</p>
+              </div>
+              <div id="socialMedia">
+                      <h3>Quick Links</h3>
+                  <h4><li onclick="window.location.href='HtmlCourses/html-1.html'">Introduction to HTML</li></h4>
+                  <h4><li onclick="window.location.href='HtmlCourses/html-2.html'">Attributes HTML</li></h4>
+                  <h4><li onclick="window.location.href='HtmlCourses/html-3.html'">HTML Style</li></h4>
+                  <h4><li onclick="window.location.href='css.html'">Learn CSS</li></h4>
+                  <h4><li onclick="window.location.href='js.html'">Learn Js</li></h4>
+                </div>
+          </div> 
+          <copyright><p style="text-align:center; font-size:15px">© Copyright to Let's code</p></copyright>    
+      </footer>
+
+
+      
+      <script src="loginDb.js"></script>  
+      <script src="./src/index.js"></script>
+ </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="theme-color" content="#DF9CF9">
+	<meta name="author" content="Mohamed Abdul Rahman " >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Style</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="stylesheet" href="html-1.css">
+<link rel="stylesheet" href="../index.css">
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+</head>
+<body>
+	<div id="loader">
+		<img src="../img/load.gif" alt="">
+</div>
+<div id="content">
+ <!--Banner starts-->
+    
+<div id="banner">
+ <ul>
+ <li  > <h1 ><i id="bar" onclick="menuOpen()" class="fas fa-bars"></i><i id="wg" onclick="menuClose()" class="fas fa-times"></i></h1></li>
+ <li><h1  id="lets"> Let's Code <i class="fas fa-code"></i></h1></li>
+ <li id="BanUsername"><h2><i class="fa fa-user"></i>  </h2></li>
+  </ul>
+</div>
+
+<!--menu starts-->
+ <div id="menu">
+   <h1>Menu</h1> 
+   <ul id="menuLi">
+	<li><a href="../index.html"><i class="fas fa-laptop-house"></i> Home</a></li>  
+	<li><a href="../html.html"><i class="fab fa-html5"></i> Learn HTML</a></li>
+	<li><a href="../css.html"><i class="fab fa-css3-alt"></i> Learn CSS</a></li>
+	<li><a href="../js.html"><i class="fab fa-js"></i> Learn Javascript</a></li>
+	<li><a href="../playground.html"><i class="fab fa-js"></i> Code Playground</a></li>
+ <!--    <li><a href="projectideas.html"><i class="fas fa-lightbulb"></i> Project Ideas</a></li> -->
+	<li><a href="../feedback.html"><i class="far fa-comment-alt"></i> Feedback</a></li>  
+
+  </ul> 
+ 
+ </div>
+ 
+ 
+ <div id="tickBar">
+	<li><i id="untickIcon1" class="fas fa-circle-notch"></i><i  id="tickIcon1" class="fas fa-check-circle"></i></li>
+	<li>---------------------</li>
+	
+	<li><i id="untickIcon2" class="fas fa-circle-notch"></i><i  id="tickIcon2"   class="fas fa-check-circle"></i></li>
+	<li>---------------------</li>
+<li><i id="untickIcon3" class="fas fa-circle-notch"></i><i  id="tickIcon3" class="fas fa-check-circle"></i></li>
+</div>
+<!-- course page starts -->
+<div id="coursePage">
+<h1>3.HTML Style</h1>
+<br>
+<div id="sec1">
+<div id="p1">
+<iframe width="500" class="video" height="300" src="https://www.youtube.com/embed/Y3A_O0hH-0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	<br>
+	<h1>HTML Formatting Elements </h1>
+	<p>Formatting elements were designed to display special types of text: <br>
+
+	 <code> <<code>b</code>> </code>- Bold text <br>
+
+	  <code> <<code>strong</code> ></code>- Important text <br>
+	  <code><<code>i</code> ></code>- Italic text <br>
+	  <code> <<code>em</code>></code> - Emphasized text <br>
+	   <code><<code>mark</code>> </code>- Marked text <br>
+	   <code><<code>small</code>></code> - Smaller text <br>
+	  <code><<code>del</code>> </code>- Deleted text <br>
+	   <code><<code>ins</code>> </code>- Inserted text <br>
+	   <code><<code>sub</code>> </code>- Subscript text <br>
+	  <code> <<code>sup</code>></code> - Superscript text
+	   </p>
+<br><br>
+<button onclick="courseNext(1)"  id="codeArea">Next </button>
+
+</div>
+</div>
+
+<div id="sec2">
+<div id="p1" >
+<iframe width="500" class="video" height="300" src="https://www.youtube.com/embed/wSATTxU8SvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>Examples Explained : </h1>
+	<p>
+<b>CSS-Cascading Style Sheet</b>
+An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+</p>
+<h2>Example Code: </h2>
+<br>
+<p style="color:green; font-size:20px">You can able to edit this code! </p>
+
+<iframe height="500" style="width: 90%;" scrolling="no" title="html-3" src="https://codepen.io/abu36/embed/OJzaQGE?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href="https://codepen.io/abu36/pen/OJzaQGE">
+html-3</a> by Abu36 (<a href="https://codepen.io/abu36">@abu36</a>)
+on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<br>
+<br>
+<button onclick="courseNext(2)" id="codeArea">Take A Test</button>
+<br>
+<button onclick="courseNext()"  id="codeArea">Previous </button>
+
+</div>
+</div>
+<div id="sec3">
+<div id="p1">
+<div id="quiz">
+   <h2>Complete The Quiz</h2>
+   <form >
+<h4 id="q1">1.What is Full Form of CSS?</h4>
+
+
+<input type="radio"   value="false"   name="q1" required>
+<label>Calibrating style sheet</label><br>
+<input type="radio"    value="false" name="q1">
+<label>coding style sheet</label><br>
+<input type="radio"    value="true"  name="q1">
+<label>Cascading Style Sheet</label><br>
+<input type="radio"    value="false" name="q1">
+<label>Call Style Sheet</label><br>
+
+<h4 id="q2">2.Which Tag is used to bold a Text?</h4>
+<input type="radio"    value="false" name="q2" required>
+<label><code><<code>bold</code>></code></label><br>
+<input type="radio"  value="false"  name="q2">
+<label><code><<code>bd</code>></code></label><br>
+<input type="radio"   value="false"  name="q2">
+<label><code><<code>br</code>></code></label><br>
+<input type="radio"    value="true"  name="q2">
+<label><code><<code>b</code>></code></label><br>
+
+<h4 id="q3">3.Which Style sheet is more priority?</h4>
+
+
+<input type="radio"    value="false" name="q3"  required>
+<label>External Style Sheet</label><br>
+<input type="radio"  value="true" name="q3" >
+<label>Internal Style Sheet</label><br>
+
+
+<h4 id="q4">4.What will be inside this code <code><<code>h1 __________<code>><code>Change my color to Red</code><</code>h1</code>></code></h4>
+
+
+<input type="radio"    value="true" name="q4" required>
+<label>style="color:red"</label><br>
+<input type="radio"  value="false" name="q4" >
+<label>color:red</label><br>
+<input type="radio"  value="false" name="q4" >
+<label>"red"</label><br>
+<input type="radio" value="false" name="q4" >
+<label>style:"color:red"</label><br>
+
+<h4 id="q5">5.Which Tag ias used to Italic Text?</h4>
+
+
+<input type="radio"   value="true" name="q5" required>
+<label><code><<code>i</code>></code></label><br>
+<input type="radio"    value="false" name="q5" >
+<label><code><<code>t</code>></code></label><br>
+<input type="radio"   value="false" name="q5" >
+<label><code><<code>it</code>></code></label><br>
+<input type="radio" value="false" name="q5" >
+<label><code><<code>italic</code>></code></label><br>
+
+
+   </form>
+</div>	
+<button onclick="courseNext(4);result('3')"   id="codeArea">Submit</button><br>
+   <button onclick="courseNext()" style="width:60%"  id="codeArea">Revise the Lesson</button>
+
+</div>
+</div>	
+</div>
+<div id="sec4">
+<div id="p1">
+<h2 style="text-align: center;">Result</h2>
+<img src="../img/ctick.gif" alt="tick" id="ctick">
+<img src="../img/cwrong.gif" alt="wrong" id="cwrong">
+<h3 id="marking">Please Answer all questions</h3>
+
+<button onclick="courseNext(2)" id="try" >Try Again</button>
+<button onclick="window.location.href='html-4.html'" id="cont">Continue</button>
+
+
+
+</div>
+</div>
+ 
+ <!-- iframe code area -->
+ <div id="codeIt">
+ 				
+ </div>
+ <footer>
+	<div id="foot">
+			<div class="info">
+		<h4>Let's Code <i class="fas fa-code"></i></h4>			
+		<p>This is a Learning Website <b></b>.</p>
+	</div>
+	<div id="socialMedia">
+					<h3>Quick Links</h3>
+			<h4><li onclick="window.location.href='HtmlCourses/html-1.html'">Introduction to HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-2.html'">Attributes HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-3.html'">HTML Style</li></h4>
+<h4><li onclick="window.location.href='css.html'">Learn CSS</li></h4>
+<h4><li onclick="window.location.href='js.html'">Learn Js</li></h4>
+</div>
+</div> 
+<copyright><p style="text-align:center; font-size:15px">© Copyright to Let's code</p></copyright>    
+</footer>
+<script src="html-1.js"></script>
+<script src="../loginDb.js"></script>
+</div>
+ </body>
+</html>	

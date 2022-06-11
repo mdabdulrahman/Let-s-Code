@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="theme-color" content="#DF9CF9">
+	<meta name="author" content="Mohamed Abdul Rahman " >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Attributes</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="stylesheet" href="html-1.css">
+<link rel="stylesheet" href="../index.css">
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+</head>
+<body>
+	<div id="loader">
+		<img src="../img/load.gif" alt="">
+</div>
+ <!--Banner starts-->
+    <div id="content">
+<div id="banner">
+ <ul>
+ <li  > <h1 ><i id="bar" onclick="menuOpen()" class="fas fa-bars"></i><i id="wg" onclick="menuClose()" class="fas fa-times"></i></h1></li>
+ <li><h1  id="lets"> Let's Code <i class="fas fa-code"></i></h1></li>
+ <li id="BanUsername"><h2><i class="fa fa-user"></i>  </h2></li>
+  </ul>
+</div>
+
+<!--menu starts-->
+ <div id="menu">
+   <h1>Menu</h1> 
+   <ul id="menuLi">
+	<li><a href="../index.html"><i class="fas fa-laptop-house"></i> Home</a></li>  
+	<li><a href="../html.html"><i class="fab fa-html5"></i> Learn HTML</a></li>
+	<li><a href="../css.html"><i class="fab fa-css3-alt"></i> Learn CSS</a></li>
+	<li><a href="../js.html"><i class="fab fa-js"></i> Learn Javascript</a></li>
+	<li><a href="../playground.html"><i class="fab fa-js"></i> Code Playground</a></li>
+ <!--    <li><a href="projectideas.html"><i class="fas fa-lightbulb"></i> Project Ideas</a></li> -->
+	<li><a href="../feedback.html"><i class="far fa-comment-alt"></i> Feedback</a></li>  
+
+  </ul> 
+ 
+ </div>
+ 
+ 
+ <div id="tickBar">
+	<li><i id="untickIcon1" class="fas fa-circle-notch"></i><i  id="tickIcon1" class="fas fa-check-circle"></i></li>
+	<li>---------------------</li>
+	
+	<li><i id="untickIcon2" class="fas fa-circle-notch"></i><i  id="tickIcon2"   class="fas fa-check-circle"></i></li>
+	<li>---------------------</li>
+<li><i id="untickIcon3" class="fas fa-circle-notch"></i><i  id="tickIcon3" class="fas fa-check-circle"></i></li>
+</div>
+<!-- course page starts -->
+<div id="coursePage">
+<h1>2.HTML Attributes</h1>
+<br>
+<div id="sec1">
+<div id="p1">
+<iframe width="500" class="video" height="300" src="https://www.youtube.com/embed/XKZWkF7RGAA?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	<br>
+	<h1>The href Attribute </h1>
+	<p>All HTML elements can have attributes
+	   Attributes provide additional information about elements
+	   Attributes are always specified in the start tag
+	   Attributes usually come in name/value pairs like: name="value"
+	   The <code><a></code> tag defines a hyperlink. The href attribute specifies the URL of the page the link 
+		   Examples:<code><<code>a href="https://www.w3schools.com">Visit W3Schools<code><</code>/a</code>></code>
+	   </p>
+<br><br>
+<button onclick="courseNext(1)"  id="codeArea">Next </button>
+
+</div>
+</div>
+
+<div id="sec2">
+<div id="p1" >
+<iframe width="500" class="video" height="300" src="https://www.youtube.com/embed/cGANVs5w8T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>Examples Explained : </h1>
+	<p><ul>
+				<li>	There are two ways to specify the URL in the src attribute:
+				   1. Absolute URL - Links to an external image that is hosted on another website. Example: <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>.
+				   Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+				   2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example:<code>src="img_girl.jpg"</code>. If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+				   
+				   Tip: It is almost always best to use </li>
+</ul>
+</p>
+<h2>Example Code: </h2>
+<br>
+<p style="color:green; font-size:20px">You can able to edit this code! </p>
+
+<iframe height="500" style="width: 90%;" scrolling="no" title="html-2" src="https://codepen.io/abu36/embed/wvpQyjj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href="https://codepen.io/abu36/pen/wvpQyjj">
+html-2</a> by Abu36 (<a href="https://codepen.io/abu36">@abu36</a>)
+on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<br>
+<br>
+<button onclick="courseNext(2)" id="codeArea">Take A Test</button>
+<br>
+<button onclick="courseNext()"  id="codeArea">Previous </button>
+
+</div>
+</div>
+<div id="sec3">
+<div id="p1">
+<div id="quiz">
+   <h2>Complete The Quiz</h2>
+   <form >
+<h4 id="q1">1.What is an Anchor Tag?</h4>
+
+
+<input type="radio"   value="true"   name="q1" required>
+<label><code><<code>a</code>></code></label><br>
+<input type="radio"    value="false" name="q1">
+<label><code><<code>anchor</code>></code></label><br>
+<input type="radio"    value="false"  name="q1">
+<label><code><<code>ar</code>></code></label><br>
+<input type="radio"    value="false" name="q1">
+<label>None of the above</label><br>
+
+<h4 id="q2">2.Which Attribute  is used to change the background colour of web page?</h4>
+<input type="radio"    value="false" name="q2" required>
+<label>bgcolor</label><br>
+<input type="radio"  value="true"  name="q2">
+<label>background-color</label><br>
+<input type="radio"   value="false"  name="q2">
+<label>color-background</label><br>
+<input type="radio"    value="false"  name="q2">
+<label>color</label><br>
+
+<h4 id="q3">3.Which tag is used to give largest size to a heading?</h4>
+
+
+<input type="radio"    value="false" name="q3"  required>
+<label><code><<code>h6</code>></code></label><br>
+<input type="radio"  value="false" name="q3" >
+<label><code><<code> h4</code>></code></label><br>
+<input type="radio"   value="false" name="q3" >
+<label><code><<code>h5</code>></code></label><br>
+<input type="radio"  value="true" name="q3" >
+<label><code><<code>h1</code>></code></label><br>
+
+<h4 id="q4">4.What is the correct HTML element for inserting a line break?</h4>
+
+
+<input type="radio"    value="false" name="q4" required>
+<label><code><<code>bk</code>></code></label><br>
+<input type="radio"  value="false" name="q4" >
+<label><code><<code> bt</code>></code></label><br>
+<input type="radio"  value="true" name="q4" >
+<label><code><<code>br</code>></code></label><br>
+<input type="radio" value="false" name="q4" >
+<label><code><<code>break</code>></code></label><br>
+
+<h4 id="q5">5.Which Tag is used to give largest size to a paragraph?</h4>
+
+
+<input type="radio"   value="false" name="q5" required>
+<label><code><<code>para2</code>></code></label><br>
+<input type="radio"    value="true" name="q5" >
+<label><code><<code>p1</code>></code></label><br>
+<input type="radio"   value="false" name="q5" >
+<label><code><<code>p5</code>></code></label><br>
+<input type="radio" value="false" name="q5" >
+<label><code><<code>p8</code>></code></label><br>
+
+
+   </form>
+</div>	
+<button onclick="courseNext(4);result('2')"   id="codeArea">Submit</button><br>
+   <button onclick="courseNext()" style="width:60%"  id="codeArea">Revise the Lesson</button>
+
+</div>
+</div>	
+</div>
+<div id="sec4">
+<div id="p1">
+<h2 style="text-align: center;">Result</h2>
+<img src="../img/ctick.gif" alt="tick" id="ctick">
+<img src="../img/cwrong.gif" alt="wrong" id="cwrong">
+<h3 id="marking">Please Answer all questions</h3>
+
+<button onclick="courseNext(2)" id="try" >Try Again</button>
+<button onclick="window.location.href='html-3.html'" id="cont">Continue</button>
+
+
+
+</div>
+</div>
+
+ <!-- iframe code area -->
+ <div id="codeIt">
+ 				
+ </div>
+ <footer>
+	<div id="foot">
+			<div class="info">
+		<h4>Let's Code <i class="fas fa-code"></i></h4>			
+		<p>This is a Learning Website <b></b>.</p>
+	</div>
+	<div id="socialMedia">
+					<h3>Quick Links</h3>
+			<h4><li onclick="window.location.href='HtmlCourses/html-1.html'">Introduction to HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-2.html'">Attributes HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-3.html'">HTML Style</li></h4>
+<h4><li onclick="window.location.href='css.html'">Learn CSS</li></h4>
+<h4><li onclick="window.location.href='js.html'">Learn Js</li></h4>
+</div>
+</div> 
+<copyright><p style="text-align:center; font-size:15px">© Copyright to Let's code</p></copyright>    
+</footer>
+<script src="html-1.js"></script>
+<script src="../loginDb.js"></script>
+</div>
+ </body>
+</html>	

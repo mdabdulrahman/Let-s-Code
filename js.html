@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="lcon-code.png">
+  
+  
+  <meta name="author" content="Mohamed Abdul Rahman " >
+    <meta name="theme-color" content="#DF9CF9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>JavaScript Courses</title>
+  <!-- G font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<!-- Font awesome icon Link -->
+<script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<!-- External Files -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="html.css">
+</head>
+<body>
+				<!-- Loading Screen -->
+ <div id="loader">
+  				<img src="img/load.gif" alt="">
+  </div>
+  <div id="content">
+  <!--Banner starts-->
+<div id="banner">
+ <ul>
+ <li > <h1><i id="bar" onclick="menuOpen()" class="fas fa-bars"></i><i id="wg" onclick="menuClose()" class="fas fa-times"></i></h1></li>
+ <li><h1 id="lets"> Let's Code <i class="fas fa-code"></i></h1></li>
+ <li id="BanUsername"><h2><i class="fa fa-user"></i>  </h2></li>
+</ul>
+</div>
+<!--menu starts-->
+ <div id="menu">
+   <h1>Menu</h1> 
+   <ul id="menuLi">
+    <li><a href="index.html"><i class="fas fa-laptop-house"></i> Home</a></li>  
+    <li><a href="html.html"><i class="fab fa-html5"></i> Learn HTML</a></li>
+    <li><a href="css.html"><i class="fab fa-css3-alt"></i> Learn CSS</a></li>
+    <li><a href="js.html"><i class="fab fa-js"></i> Learn Javascript</a></li>
+    <li><a href="playground.html"><i class="fab fa-js"></i> Code Playground</a></li>
+ <!--    <li><a href="projectideas.html"><i class="fas fa-lightbulb"></i> Project Ideas</a></li> -->
+    <li><a href="feedback.html"><i class="far fa-comment-alt"></i> Feedback</a></li>  
+
+  </ul> 
+ </div>
+ <!-- Start course section -->
+ <div id="startCourse">
+   <h1><i class="fab fa-js"></i>Learn JS</h1>  
+   <button onclick="window.location.href ='jsCourses/js-1.html'">Start Now</button>
+ </div>
+ <!-- lessons have module id for full course and one id for each course box -->
+ <!-- module id for every 3 one id boxes -->
+ <span><h1 style="text-align:center;">Lessons</h1></span>
+ <div id="module">
+         <div id="one" class="onej1">
+            <h2>1.JavaScript Statements</h2>           
+            <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+        <button onclick="window.location. href='JsCourses/js-1.html'">Learn it</button>
+         </div> 
+          
+         <div id="one" class="onej2">
+             <h2>2.JavaScript Syntax</h2>
+             <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed
+ </p>
+         <button>Learn it</button>
+         </div>
+           
+         <div id="one" class="onej3">
+           <h2>3.JavaScript Comments</h2>
+             <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+         <button>Learn it</button>
+         </div>  
+         </div>
+         
+         <div  id="module">
+         <div id="one" class="onej4">
+            <h2>4.JavaScript Variables</h2>
+            
+              
+            <p>Variables are containers for storing data (storing data values).
+            </p>
+        <button>Learn it</button>
+         </div> 
+          
+         <div id="one" class="onej5">
+             <h2>5.JavaScript Let</h2>
+             <p>Variables defined with let cannot be redeclared.
+                You cannot accidentally redeclare a variable.</p>
+         <button>Learn it</button>
+         </div>
+           
+         <div id="one" class="onej6">
+           <h2>6.JavaScript Const</h2>
+             <p>The const keyword was introduced in ES6 (2015).
+
+                Variables defined with const cannot be Redeclared.
+                
+                Variables defined with const cannot be Reassigned.</p>
+         <button>Learn it</button>
+         </div>  
+         </div>
+         
+         <div id="module">
+         <div id="one" class="onej7">
+            <h2> 7.JavaScript Operators</h2>
+            <br>
+              
+            <p>Operators are used to do mathmetic operations and for equal operations</p>
+        <button>Learn it</button>
+         </div> 
+          
+         <div id="one" class="onej8">
+             <h2>8.JavaScript Data Types</h2>
+             <p>JavaScript variables can hold different data types: numbers, strings, objects and more
+            </p>
+         <button>Learn it</button>
+         </div>
+           
+         <div id="one" class="onej9">
+           <h2>9.JavaScript Functions</h2>
+             <p>A JavaScript function is a block of code designed to perform a particular task.
+                A JavaScript function is executed when "something" invokes it (calls it).</p>
+         <button>Learn it</button>
+         </div> 
+         
+         </div>
+         <div id="module">
+          <div id="one" class="onej10">
+             <h2>10.JavaScript String Methods</h2>
+             <br>
+               
+             <p>But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</p>
+         <button onclick="window.location.href='whatsapp.html'">Learn it</button>
+          </div> 
+           
+          <div id="one" class="onej11">
+              <h2>11.JavaScript Number Methods</h2>
+              <p>Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).</p>
+          <button>Learn it</button>
+          </div>
+            
+          <div id="one" class="onej12">
+            <h2>12.JavaScript Arrays</h2>
+              <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this</p>
+          <button>Learn it</button>
+          </div> 
+          
+          </div>
+          <div id="module">
+            <div id="one" class="onej13">
+               <h2>13.JavaScript Sorting Arrays</h2>
+               <br>
+                 
+               <p>The sort() method sorts an array alphabetically:</p>
+           <button>Learn it</button>
+            </div> 
+             
+            <div id="one" class="onej14">
+                <h2>14.JavaScript if, else, and else if
+                </h2>
+                <p>Conditional statements are used to perform different actions based on different conditions.</p>
+            <button>Learn it</button>
+            </div>
+              
+            <div id="one" class="onej15">
+              <h2>15.JavaScript For Loop</h2>
+                <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
+            <button>Learn it</button>
+            </div> 
+            
+            </div>
+<!-- Footer -->
+<footer>
+  <div id="foot">
+      <div class="info">
+    <h4>Let's Code <i class="fas fa-code"></i></h4>			
+    <p>This is a Learning Website <b></b>.</p>
+  </div>
+  <div id="socialMedia">
+          <h3>Quick Links</h3>
+      <h4><li onclick="window.location.href='HtmlCourses/html-1.html'">Introduction to HTML</li></h4>
+      <h4><li onclick="window.location.href='HtmlCourses/html-2.html'">Attributes HTML</li></h4>
+      <h4><li onclick="window.location.href='HtmlCourses/html-3.html'">HTML Style</li></h4>
+      <h4><li onclick="window.location.href='css.html'">Learn CSS</li></h4>
+      <h4><li onclick="window.location.href='js.html'">Learn Js</li></h4>
+    </div>
+</div> 
+<copyright><p style="text-align:center; font-size:15px">© Copyright to Let's code</p></copyright>    
+</footer>
+
+         
+<script src="./src/index.js"></script>
+<script src="loginDb.js"></script>       
+ </div>
+</body>
+</html>

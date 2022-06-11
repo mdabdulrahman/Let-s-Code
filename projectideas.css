@@ -1,0 +1,239 @@
+body{
+    font-family: 'Quicksand', monospace;
+    margin:0;
+    padding:0;
+  }
+  
+  /* Style For Loading Screen */
+  
+  #content{
+                  display:none;
+  }
+  #loader{
+                  background-color:#f7f7f7;
+                  width:100%;
+           height:100%;
+           position:absolute;
+           overflow:hidden;
+           display:block;	     				
+  }
+  #loader img{
+        width: 30%;
+        background-color:#F7F7F7;
+        margin:50% auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;           
+  }
+  
+  /* Banner Style */
+  
+  #banner ul li{
+  list-style-type:none;
+  display:inline-block;
+  margin:0 10px 0 10px;
+  }
+  #banner{
+  background-color:#FFFFFF;
+  border-bottom:5px solid #F4F4F4;
+  top:0;
+  left:0;
+  position:sticky;
+  width:100%;
+  margin: 0;
+  }
+  /* Menu style */
+  #wg{
+    display:none;
+  }
+  #menu h1{
+  border-top:5px outset #F4F4F4;
+  text-align:center;
+  color:black;
+  }
+  #menu{
+  background-color:white;
+  border-right:3px solid #F4F4F4;
+  border-bottom:3px solid #F4F4F4;
+  color:white;
+  padding:1% 3% 5% 1%;
+  font-size:20px;
+  display:none;
+  position:fixed;
+  overflow-y:auto;
+  height:100%;
+  margin-top:0;
+  }
+  #menu ul li{
+  list-style-type:none;
+  line-height:3;
+  margin-right:10px;
+  font-size:20px;
+  color:black;
+  
+  }
+  #menu ul li:hover{
+  font-size:22px;
+  text-decoration: underline;
+  background-color:#f4f4f4;
+  border-radius:10px;
+  padding:3px;
+  }
+  #menu ul li a{
+  text-decoration:none;
+  color:black;
+  outline:none;
+  }
+  /* blog style */
+  #blog{
+      width:90%;
+      margin: auto;
+  }
+/* footer style */
+#foot{
+    background-color:#132030;	
+    display:flex;
+    margin:auto;
+    color:white;		
+}
+#socialMedia{
+            width:30%;
+            margin:auto;
+            color:white;
+}
+.info{
+            width:30%;
+            margin:auto;
+            color:white;
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width:800px){
+#banner ul li h1{
+font-size:22px;
+}
+#banner ul li{
+margin:-5px 4px -9px 5px;
+}
+#lets{
+text-align:center;
+}
+#banner{
+border-bottom:3px solid #F4F4F4;
+margin-bottom:-20px;
+position:sticky;
+}
+.intro h1{
+font-size:25px;
+}
+.intro img{
+            width:60px;
+}
+.intro{
+border-bottom:3px solid #F4F4F4;
+padding-top:10px;
+background:url("bg.jpg") no-repeat center/cover;
+height:200px;
+
+}
+#h1{
+font-size:25px;
+}
+#h6{
+font-size:15px;
+font-family: 'Josefin Slab', serif;
+margin-left:5px;
+}
+.intro button{
+font-size:15px;
+padding:5px;
+border:none;
+border-radius:5px;
+}
+#menu{
+font-size:20px;
+overflow-y:auto;
+}
+#menu ul li{
+font-size:15px;
+}
+#menu ul li:hover{
+font-size:18px;
+border-radius:5px;
+padding:2px;
+}
+#html h1{
+font-size:23px;
+}
+#html button{
+font-size:15px;
+padding:10px;
+border-radius:10px;
+}
+#aboutWeb img{
+            width:200px;
+            margin:auto;			
+}
+#aboutWeb li h3{
+            width:250px;
+    font-weight: 580;
+}
+#aboutWeb li{
+            display:block;
+}
+#aboutWeb{
+            width:200px;
+    display: block;
+            margin:auto;
+}
+#overview{
+display: block;
+}
+#course{
+            display:block;
+                }
+#html{
+            width:85%;
+            height: 320px;
+}
+#loop{
+display: block;
+width:80%;
+margin:auto;
+padding:auto;
+border:3px outset currentColor ;
+justify-content: center;
+
+}
+#demand{
+display: block;
+width:80%;
+margin:auto,auto,2%,auto;
+padding:auto;
+border:3px outset currentColor ;
+
+}
+#loop img{
+            width:200px;
+    margin:auto;
+    display: block;
+}
+#loop li h3{
+width:95%;
+display: block;
+font-weight: 500;
+}
+#demand li h3{
+width:95%;
+display: block;
+font-weight: 500;
+}
+.demand img{
+            width:200px;	
+    margin:auto;
+    display: block;	
+    
+}
+}

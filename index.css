@@ -1,0 +1,507 @@
+
+body{
+  font-family: 'Quicksand', monospace;
+  margin:0;
+  padding:0;
+  accent-color:#e100ff
+
+}
+
+/* Style For Loading Screen */
+
+#content{
+				display:none;
+}
+#loader{
+  background-color:#f7f7f7;
+  width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+display:none;	     				
+}
+#loader img{
+width: 20%;
+background-color:#F7F7F7;
+margin:20% auto auto auto;
+display:flex;
+justify-content:center;
+align-items:center;           
+}
+
+/* Banner Style */
+#BanUsername{
+  float:right;
+  padding-right:12%;
+  
+}
+#BanUsername a{
+  position: absolute;
+  padding-top: 1%;
+}
+#BanUsername img{
+
+
+  width: 4vw;
+}
+
+
+#banner ul li{
+list-style-type:none;
+display:inline-block;
+margin:0 10px 0 10px;
+}
+#banner{
+background-color:#FFFFFF;
+border-bottom:3px solid #F4F4F4;
+top:0;
+left:0;
+position:sticky;
+width:100%;
+margin: 0;
+}
+/* Menu style */
+#bar{
+  animation-name: wg;
+  animation-duration: .5s;
+animation-timing-function: ease-in;
+}
+#wg{
+  display:none;
+animation-name: wg;
+animation-duration: 1s;
+animation-timing-function: ease-in;
+}
+@keyframes wg{
+0%{
+  opacity: 0.1;
+  font-size: xx-small;
+}
+100%{
+  opacity:1;
+}
+}
+#menu h1{
+border-top:5px outset #F4F4F4;
+text-align:center;
+color:black;
+}
+#menu{
+background-color:white;
+border-right:3px solid #F4F4F4;
+border-bottom:3px solid #F4F4F4;
+color:white;
+padding:1% 3% 5% 1%;
+font-size:20px;
+display:none;
+position:fixed;
+height: 100%;
+overflow-y:auto;
+
+
+
+margin-top:-1%;
+animation-name: menuOpen;
+animation-duration: 1s;
+
+animation-timing-function: ease-in;
+
+}
+@keyframes menuOpen{
+  0%{
+    height:0%;
+  }
+  
+    100%{
+     height:100%;
+      }
+
+
+}
+#menu ul{
+  height:100%;
+  animation-name: menuOpenli;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+
+
+  /* overflow: scroll; */
+}
+@keyframes menuOpenli{
+  0%{
+    display: none;
+    transform: translateX(-100px);
+    
+  }
+
+  100%{
+    transform: translateX(0px);
+   
+  }
+}
+#menu ul li{
+list-style-type:none;
+line-height:3;
+margin-right:10px;
+font-size:18px;
+color:black;
+transition: 0.5s;
+
+}
+#menu ul li:hover{
+font-size:20px;
+background-color:#f4f4f4;
+border-radius:10px;
+padding:5px;
+}
+#menu ul li a{
+text-decoration:none;
+color:black;
+outline:none;
+}
+#linkProfile{
+  text-decoration:none;
+color:black;
+outline:none;
+}
+/* Intro division Style */
+.intro{
+ background:url("bg.jpg") no-repeat center/cover;
+ height:400px;
+ 
+ 
+}
+
+#h1{
+  font-size:50px;
+font-family: 'Josefin Slab', serif; 
+margin-left:10px;
+}
+#h6{
+  font-size:25px;
+font-family: 'Josefin Slab', serif;
+margin-left:10px;
+}
+.intro img{
+				width:60px;
+}
+.intro button{
+  background-color: #c73bc7;
+color:#EDF5E0;
+font-size:25px;
+border-color: #c73bc7;
+border-radius:15px;
+padding:10px;
+font-weight:bold;
+display:flex;
+font-family: 'Josefin Slab', serif; 
+text-align:center;
+justify-content:center;
+align-items:center;
+margin-left:80px;
+}
+.intro button:hover{
+  background-image:linear-gradient(
+    to right, #7f00ff, #e100ff
+);
+border-color:#7f00ff ;
+}
+/* Courses section style */
+#course{
+				display:flex;
+				width:90%;
+				margin:3% auto;			
+}
+#html{
+border:3px outset #F4F4F4;
+padding:1%;
+margin:auto;
+width:30%;
+height:390px;
+border-radius:10px; 
+}
+#html h1{
+text-align:center;
+}
+#html p{
+text-align:center;
+font-size: medium;
+}
+#html button{
+  background-image:linear-gradient(
+  				to right, #7f00ff, #e100ff
+  );
+  border-color:#7f00ff ;
+  font-size:15px;
+  color:white;
+  display:flex;
+  text-align:center;
+  justify-content:center;
+  margin:auto;
+  padding:10px;
+  border-radius:15px;
+  font-family: 'Quicksand', monospace;
+  font-weight:bold;
+}
+#html button:hover{
+  background-image:linear-gradient(
+    to right,  #e100ff, #7f00ff
+);
+border-color: #e100ff;
+}
+#html a{
+text-decoration:none;
+color:white;
+}
+/* About web div style */
+#aboutWeb{
+				width:600px;
+				margin:3% auto;	
+        display: flex;			
+}
+#aboutWeb li{
+				list-style-type:none;
+				margin: 2%;
+				
+}
+#aboutWeb li h3{
+				width:420px;	
+        font-weight: 500;	     					
+}
+#aboutWeb img{
+				width:400px;											
+}
+
+/* front end developer style*/
+#loop{
+  width:550px;
+  margin:3% auto;	
+  display: flex;	
+ 
+  border-radius: 20px;	
+  box-shadow:0px 0px 4px black;			
+}
+#loop li{
+  list-style-type:none;
+  margin: 2%;
+  
+}
+#loop li h3{
+  width: 95%;		     					
+}
+#loop img{
+  width:250px;											
+}
+
+/* Demand for web developers style*/
+#demand{
+  width:550px;
+  margin:3% auto;	
+  display: flex;	
+box-shadow:0px 0px 4px black;	
+  border-radius: 20px;	
+}
+#demand li{
+  list-style-type:none;
+  margin: 2%;
+  
+}
+#demand li h3{
+  width: 95%;			     					
+}
+#demand img{
+  width:250px;											
+}
+#overview{
+  display:flex;
+  width: auto;
+
+}
+/* footer style */
+#foot{
+		background-color:#132030;	
+		display:flex;
+		margin:auto;
+		color:white;		
+}
+#socialMedia{
+				width:30%;
+				margin:auto;
+				color:white;
+}
+.info{
+				width:30%;
+				margin:auto;
+				color:white;
+}
+/* for profile img */
+#profileImg{
+  border-radius: 50%;
+  width:30%;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:800px){
+  #loader{
+    background-color:#f7f7f7;
+    width:100%;
+   height:100%;
+   position:absolute;
+   overflow:hidden;
+   display:block;	     				
+}
+#loader img{
+  width: 30%;
+  background-color:#F7F7F7;
+  margin:50% auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;           
+}
+  #BanUsername{
+    float: right;
+    padding-left: 3%;
+  }
+  #BanUsername a{
+    position: absolute;
+    display: none;
+  }
+  #BanUsername img{
+  
+ 
+    width: 10vw;
+  }
+  #BanUsername h2{
+    font-size: 15px;
+  }
+  #banner ul li h1{
+  font-size:22px;
+  }
+  #banner ul li{
+  margin:-5px 4px -9px 5px;
+  }
+  #lets{
+  text-align:center;
+  }
+  #banner{
+  border-bottom:3px solid #F4F4F4;
+  margin-bottom:-20px;
+  position:sticky;
+  }
+ .intro h1{
+   font-size:25px;
+ }
+ .intro img{
+				width:60px;
+}
+ .intro{
+   border-bottom:3px solid #F4F4F4;
+   padding-top:10px;
+   background:url("bg.jpg") no-repeat center/cover;
+   height:200px;
+   
+ }
+ #h1{
+ font-size:25px;
+ }
+  #h6{
+font-size:15px;
+font-family: 'Josefin Slab', serif;
+margin-left:5px;
+}
+.intro button{
+  font-size:15px;
+  padding:5px;
+  border:none;
+  border-radius:5px;
+}
+#menu{
+font-size:20px;
+overflow-y:auto;
+}
+#menu ul li{
+font-size:15px;
+}
+#menu ul li:hover{
+font-size:18px;
+border-radius:5px;
+padding:2px;
+}
+#html h1{
+font-size:23px;
+}
+#html button{
+font-size:15px;
+padding:10px;
+border-radius:10px;
+}
+#aboutWeb img{
+				width:200px;
+				margin:auto;			
+}
+#aboutWeb li h3{
+				width:250px;
+        font-weight: 580;
+}
+#aboutWeb li{
+				display:block;
+}
+#aboutWeb{
+				width:200px;
+        display: block;
+				margin:auto;
+}
+#overview{
+  display: block;
+}
+#course{
+				display:block;
+					}
+#html{
+				width:85%;
+				height: 320px;
+}
+#loop{
+  display: block;
+  width:80%;
+  margin:auto;
+  padding:auto;
+ 
+  justify-content: center;
+
+}
+#demand{
+  display: block;
+  width:80%;
+  margin:auto,auto,2%,auto;
+  padding:auto;
+ 
+  
+}
+#loop img{
+				width:200px;
+        margin:auto;
+        display: block;
+}
+#loop li h3{
+  width:95%;
+  display: block;
+  font-weight: 500;
+}
+#demand li h3{
+  width:95%;
+  display: block;
+  font-weight: 500;
+}
+.demand img{
+				width:200px;	
+        margin:auto;
+        display: block;	
+        
+}
+}
+
+
+
+ 

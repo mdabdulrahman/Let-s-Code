@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				
+				<!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#DF9CF9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Let's Code is an online web development learning website,Here you Can learn HTML ,CSS,Javascript from basic ,with code playground ">
+  <meta name="author" content="Mohamed Abdul Rahman S">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Training Test</title>
+  <!-- Google Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<!-- Fontawesome icon links -->
+<script src="https://kit.fontawesome.com/f6e5490a48.js" crossorigin="anonymous"></script>
+<!-- G font links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- External Files -->
+<link rel="icon" type="image/x-icon" href="lcon-code.png">
+<link rel="stylesheet" href="../index.css">
+<!-- stylesheet for form -->
+<link rel="stylesheet" href="../feedback.css">
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+</head>
+<body>
+				<!-- Loading Screen -->
+ <div id="loader">
+  				<img src="../img/load.gif" alt="">
+  </div>
+  <!-- Full page Content -->
+ <div id="content">
+  <!--Banner starts-->  
+<div id="banner" >
+ <ul>
+ <li  > <h1><i id="bar" onclick="menuOpen()" class="fas fa-bars"></i><i id="wg" onclick="menuClose()" class="fas fa-times"></i></h1></li>
+ <li><h1  id="lets"> Let's Code <i class="fas fa-code"></i></h1>
+  
+ </li>
+ <li id="BanUsername"><h2>  </h2></li>
+  </ul>
+</div>
+
+<!--menu starts-->
+ <div id="menu">
+   <h1>Menu</h1> 
+   <ul id="menuLi">
+     <li><a href="../index.html"><i class="fas fa-laptop-house"></i> Home</a></li>  
+     <li><a href="../html.html"><i class="fab fa-html5"></i> Learn HTML</a></li>
+     <li><a href="../css.html"><i class="fab fa-css3-alt"></i> Learn CSS</a></li>
+     <li><a href="../js.html"><i class="fab fa-js"></i> Learn Javascript</a></li>
+     <li><a href="../playground.html"><i class="fab fa-js"></i> Code Playground</a></li>
+  <!--    <li><a href="projectideas.html"><i class="fas fa-lightbulb"></i> Project Ideas</a></li> -->
+     <li><a href="../feedback.html"><i class="far fa-comment-alt"></i> Feedback</a></li>  
+
+   </ul> 
+ </div>
+ <div id="quesCreate" style="margin-top:5%">
+     <button onclick="newSession()">
+         Create New Session
+     </button>
+    
+  <p></p>
+  <div id="ques">
+      
+  </div>
+  
+ </div>
+ <button style="display:none" onclick="titleSave()" id='title'>Done</button>
+ 
+
+ <footer>
+    <div id="foot">
+            <div class="info">
+        <h4>Let's Code <i class="fas fa-code"></i></h4>			
+        <p>This is a Learning Website <b></b>.</p>
+    </div>
+    <div id="socialMedia">
+                    <h3>Quick Links</h3>
+            <h4><li onclick="window.location.href='HtmlCourses/html-1.html'">Introduction to HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-2.html'">Attributes HTML</li></h4>
+<h4><li onclick="window.location.href='HtmlCourses/html-3.html'">HTML Style</li></h4>
+<h4><li onclick="window.location.href='css.html'">Learn CSS</li></h4>
+<h4><li onclick="window.location.href='js.html'">Learn Js</li></h4>
+</div>
+</div> 
+<copyright><p style="text-align:center; font-size:15px">© Copyright to Let's code</p></copyright>    
+</footer>
+
+ 
+  </div>
+ 
+
+ <script src="../src/index.js"></script>
+ <script src="../loginDb.js"></script>
+ <script src="dbTest.js"></script>
+</body>
+</html>
