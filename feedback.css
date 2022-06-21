@@ -111,6 +111,7 @@ body{
     background-image:linear-gradient(
   				to right, #7f00ff, #e100ff
   );
+
   border-color:#7f00ff ;
   font-size:15px;
   color:white;
@@ -120,6 +121,9 @@ body{
   border-radius:15px;
   font-family: 'Quicksand', monospace;
   font-weight:bold;
+  }
+  #submitBtn:hover{
+    opacity: 0.8;
   }
   form{
     margin: auto;

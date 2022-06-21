@@ -146,7 +146,9 @@ window.location.href="index.html";
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    alert("You have entered a wrong password/emailid")
+    document.querySelector("input").style.borderColor="red"
+ 
+    document.querySelector("#warSign").innerHTML="<center><p style='color:red'>Invalid emailId or Password</p></center>"
   });
 }
 else if(signStatus=="signOut"){
@@ -384,6 +386,7 @@ firebase.auth().onAuthStateChanged((user) => {
       typeWriter();
       change("new");
      change(3);
+     
      
     }
   });
