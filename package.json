@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@firebase/storage": "^0.9.7",
+    "firebase": "^9.8.3",
+    "node": "^18.4.0",
+    "require": "^2.4.20",
+    "require.js": "^1.0.0"
+  }
+}

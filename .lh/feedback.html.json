@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1653652047796,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1655989028176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n <div id=\"banner\">\r\n  <ul>\r\n  <li > <h1><i id=\"bar\" onclick=\"menuOpen()\" class=\"fas fa-bars\"></i><i id=\"wg\" onclick=\"menuClose()\" class=\"fas fa-times\"></i></h1></li>\r\n  <li><h1 id=\"lets\"> Let's Code <i class=\"fas fa-code\"></i></h1></li>\r\n- <li id=\"BanUsername\"><h2><i class=\"fa fa-user\"></i>  </h2></li>\r\n+ <li id=\"\"><h2><i class=\"fa fa-user\"></i>  </h2></li>\r\n </ul>\r\n </div>\r\n <!--menu starts-->\r\n  <div id=\"menu\">\r\n"
+                },
+                {
+                    "date": 1655991566025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n <div id=\"banner\">\r\n  <ul>\r\n  <li > <h1><i id=\"bar\" onclick=\"menuOpen()\" class=\"fas fa-bars\"></i><i id=\"wg\" onclick=\"menuClose()\" class=\"fas fa-times\"></i></h1></li>\r\n  <li><h1 id=\"lets\"> Let's Code <i class=\"fas fa-code\"></i></h1></li>\r\n- <li id=\"\"><h2><i class=\"fa fa-user\"></i>  </h2></li>\r\n+\r\n </ul>\r\n </div>\r\n <!--menu starts-->\r\n  <div id=\"menu\">\r\n"
                 }
             ],
             "date": 1653652047796,

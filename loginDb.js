@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
   apiKey: "AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc",
   authDomain: "letscoder2-0.firebaseapp.com",
@@ -170,10 +171,12 @@ function change(status,user){
   if (status=="new"){
   let ul=document.querySelector("#menuLi");
   let li=document.createElement("li");
+  let li1=document.createElement("li");
+ 
   let a=document.createElement("a");
 let icon=document.createElement("i");
 let logintxt=document.createTextNode("Login");
-let newUsertxt=document.createTextNode("Create Account");
+let newUsertxt=document.createTextNode(" Create Account");
 icon.classList.add("fa");
   icon.classList.add("fa-user");
   a.appendChild(icon);
@@ -181,6 +184,7 @@ a.setAttribute("href","newUser.html");
 a.appendChild(newUsertxt);
 li.appendChild(a);
 ul.appendChild(li);
+document.querySelector("ul").appendChild(li)
   }
   else if(status=="name"){
     let ul=document.querySelector("#menuLi");
@@ -242,7 +246,7 @@ ul.appendChild(li);
 
 function userInfo(profileInfo,courseInfo){
   
-let nameplace=document.querySelector("#BanUsername").firstElementChild;
+let nameplace=document.querySelector("#BanUsername");
 
 console.log(window.location.href)
 
@@ -252,14 +256,50 @@ if (window.location.href==="http://localhost:5500/index.html"||window.location.h
 typeWriter();
 }
 if (profileInfo.imgUrl){
-  let nameNode=`<img src=${profileInfo.imgUrl} onclick="window.location.href='progress.html'" ><a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;
-nameplace.innerHTML=nameNode;
+  /* let nameNode=`<img src=${profileInfo.imgUrl} onclick="window.location.href='progress.html'" ><a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;
+nameplace.innerHTML=nameNode; */
+let li=document.createElement("li");
+
+let img=document.createElement("img");
+
+
+img.setAttribute("src",`${profileInfo.imgUrl}`)
+img.style.width="4vw"
+img.style.borderRadius="50%"
+img.setAttribute("onclick",`"window.location.href='progress.html'"`)
+
+
+
+li.appendChild(img);
+
+let ul=document.querySelector("ul").appendChild(li)
+var styles={
+  "backgroundColor":"white",
+  "paddingTop":"0%"
+
+}
+Object.assign(ul.style,styles)
+
 }
 else{
 
-  let nameNode=`<i class="fa fa-user"></i> <a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;
+  let li=document.createElement("li");
+  let a=document.createElement("a");
+let icon=document.createElement("i");
+
+let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);
+icon.classList.add("fa");
+  icon.classList.add("fa-user");
+  a.appendChild(icon);
+a.setAttribute("href","progress.html");
+a.appendChild(newUsertxt);
+li.appendChild(a);
+
+document.querySelector("ul").appendChild(li)
+
+ /*  let nameNode=`<a  href='progress.html'>${profileInfo.userName}</a>`;
 nameplace.innerHTML=nameNode;
-document.getElementById("linkProfile").style.display="block";
+document.getElementById("linkProfile").style.display="block"; */
 }
 
 

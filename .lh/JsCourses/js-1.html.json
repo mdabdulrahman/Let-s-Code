@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1653651993473,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1655991527492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n <div id=\"banner\">\r\n  <ul>\r\n  <li  > <h1 ><i id=\"bar\" onclick=\"menuOpen()\" class=\"fas fa-bars\"></i><i id=\"wg\" onclick=\"menuClose()\" class=\"fas fa-times\"></i></h1></li>\r\n  <li><h1  id=\"lets\"> Let's Code <i class=\"fas fa-code\"></i></h1></li>\r\n- <li id=\"BanUsername\"><h2><i class=\"fa fa-user\"></i>  </h2></li>\r\n+\r\n   </ul>\r\n </div>\r\n \r\n <!--menu starts-->\r\n"
                 }
             ],
             "date": 1653651993473,

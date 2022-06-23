@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 20,
+            "activePatchIndex": 59,
             "patches": [
                 {
                     "date": 1655818831024,
@@ -88,6 +88,162 @@
                 {
                     "date": 1655822955623,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -385,10 +385,10 @@\n       document.getElementById(\"content\").style.display=\"block\";\r\n       typeWriter();\r\n       change(\"new\");\r\n      change(3);\r\n-     console.log(\"hi\")\r\n      \r\n+     \r\n     }\r\n   });\r\n /* to upload user profile image and upload it */\r\n let image=[]\r\n"
+                },
+                {
+                    "date": 1655905907869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,8 +169,10 @@\n function change(status,user){\r\n   if (status==\"new\"){\r\n   let ul=document.querySelector(\"#menuLi\");\r\n   let li=document.createElement(\"li\");\r\n+  let li1=document.createElement(\"li\");\r\n+ \r\n   let a=document.createElement(\"a\");\r\n let icon=document.createElement(\"i\");\r\n let logintxt=document.createTextNode(\"Login\");\r\n let newUsertxt=document.createTextNode(\"Create Account\");\r\n@@ -178,8 +180,9 @@\n   icon.classList.add(\"fa-user\");\r\n   a.appendChild(icon);\r\n a.setAttribute(\"href\",\"newUser.html\");\r\n a.appendChild(newUsertxt);\r\n+document.querySelector(\"ul\").appendChild(li)\r\n li.appendChild(a);\r\n ul.appendChild(li);\r\n   }\r\n   else if(status==\"name\"){\r\n"
+                },
+                {
+                    "date": 1655906039670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,11 +180,11 @@\n   icon.classList.add(\"fa-user\");\r\n   a.appendChild(icon);\r\n a.setAttribute(\"href\",\"newUser.html\");\r\n a.appendChild(newUsertxt);\r\n-document.querySelector(\"ul\").appendChild(li)\r\n li.appendChild(a);\r\n ul.appendChild(li);\r\n+document.querySelector(\"ul\").appendChild(li)\r\n   }\r\n   else if(status==\"name\"){\r\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n"
+                },
+                {
+                    "date": 1655906797599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,9 +174,9 @@\n  \r\n   let a=document.createElement(\"a\");\r\n let icon=document.createElement(\"i\");\r\n let logintxt=document.createTextNode(\"Login\");\r\n-let newUsertxt=document.createTextNode(\"Create Account\");\r\n+let newUsertxt=document.createTextNode(\" Create Account\");\r\n icon.classList.add(\"fa\");\r\n   icon.classList.add(\"fa-user\");\r\n   a.appendChild(icon);\r\n a.setAttribute(\"href\",\"newUser.html\");\r\n"
+                },
+                {
+                    "date": 1655985223615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,11 +658,11 @@\n      \r\n     });\r\n \r\n   }\r\n+console.log(UID)\r\n \r\n \r\n-\r\n   \r\n /* firebase photo upload */\r\n /* var files=[]\r\n document.getElementById(\"photo\").addEventListener(\"change\",function(e){\r\n"
+                },
+                {
+                    "date": 1655985284732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,11 +658,11 @@\n      \r\n     });\r\n \r\n   }\r\n-console.log(UID)\r\n \r\n \r\n+\r\n   \r\n /* firebase photo upload */\r\n /* var files=[]\r\n document.getElementById(\"photo\").addEventListener(\"change\",function(e){\r\n"
+                },
+                {
+                    "date": 1655985712183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,11 +658,15 @@\n      \r\n     });\r\n \r\n   }\r\n+if (uid==null){\r\n+  if (window.location.href!=\"/\"){\r\n+    window.location.href=\"index.html\"\r\n+  }\r\n+}\r\n \r\n \r\n-\r\n   \r\n /* firebase photo upload */\r\n /* var files=[]\r\n document.getElementById(\"photo\").addEventListener(\"change\",function(e){\r\n"
+                },
+                {
+                    "date": 1655985831968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -659,10 +659,10 @@\n     });\r\n \r\n   }\r\n if (uid==null){\r\n-  if (window.location.href!=\"/\"){\r\n-    window.location.href=\"index.html\"\r\n+  if (window.location.pathname!=\"/\"){\r\n+    window.location.pathname=\"index.html\"\r\n   }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655985981000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,15 +658,11 @@\n      \r\n     });\r\n \r\n   }\r\n-if (uid==null){\r\n-  if (window.location.pathname!=\"/\"){\r\n-    window.location.pathname=\"index.html\"\r\n-  }\r\n-}\r\n \r\n \r\n+\r\n   \r\n /* firebase photo upload */\r\n /* var files=[]\r\n document.getElementById(\"photo\").addEventListener(\"change\",function(e){\r\n"
+                },
+                {
+                    "date": 1655986867004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,9 @@\n \r\n \r\n function userInfo(profileInfo,courseInfo){\r\n   \r\n-let nameplace=document.querySelector(\"#BanUsername\").firstElementChild;\r\n+let nameplace=document.querySelector(\"#BanUsername\");\r\n \r\n console.log(window.location.href)\r\n \r\n   document.getElementById(\"loader\").style.display=\"none\";\r\n"
+                },
+                {
+                    "date": 1655986971811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,9 +259,9 @@\n nameplace.innerHTML=nameNode;\r\n }\r\n else{\r\n \r\n-  let nameNode=`<i class=\"fa fa-user\"></i> <a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n+  let nameNode=`<a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n nameplace.innerHTML=nameNode;\r\n document.getElementById(\"linkProfile\").style.display=\"block\";\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1655987033565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,9 +259,9 @@\n nameplace.innerHTML=nameNode;\r\n }\r\n else{\r\n \r\n-  let nameNode=`<a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n+  let nameNode=`<a  href='progress.html'>${profileInfo.userName}</a>`;\r\n nameplace.innerHTML=nameNode;\r\n document.getElementById(\"linkProfile\").style.display=\"block\";\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1655987366955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -259,11 +259,25 @@\n nameplace.innerHTML=nameNode;\r\n }\r\n else{\r\n \r\n-  let nameNode=`<a  href='progress.html'>${profileInfo.userName}</a>`;\r\n+  let li=document.createElement(\"li\");\r\n+  let a=document.createElement(\"a\");\r\n+let icon=document.createElement(\"i\");\r\n+\r\n+let newUsertxt=document.createTextNode(`${profileInfo.userName}`);\r\n+icon.classList.add(\"fa\");\r\n+  icon.classList.add(\"fa-user\");\r\n+  a.appendChild(icon);\r\n+a.setAttribute(\"href\",\"progress.html\");\r\n+a.appendChild(newUsertxt);\r\n+li.appendChild(a);\r\n+\r\n+document.querySelector(\"ul\").appendChild(li)\r\n+\r\n+ /*  let nameNode=`<a  href='progress.html'>${profileInfo.userName}</a>`;\r\n nameplace.innerHTML=nameNode;\r\n-document.getElementById(\"linkProfile\").style.display=\"block\";\r\n+document.getElementById(\"linkProfile\").style.display=\"block\"; */\r\n }\r\n \r\n \r\n   console.log(profileInfo.phoneNumber);\r\n"
+                },
+                {
+                    "date": 1655987381418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,9 @@\n   let li=document.createElement(\"li\");\r\n   let a=document.createElement(\"a\");\r\n let icon=document.createElement(\"i\");\r\n \r\n-let newUsertxt=document.createTextNode(`${profileInfo.userName}`);\r\n+let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n icon.classList.add(\"fa\");\r\n   icon.classList.add(\"fa-user\");\r\n   a.appendChild(icon);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n"
+                },
+                {
+                    "date": 1655987698396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -254,10 +254,24 @@\n if (window.location.href===\"http://localhost:5500/index.html\"||window.location.href===\"https://letscoder2-0.firebaseapp.com/index.html\"||window.location.href===\"https://letscoder2-0.web.app/index.html\"||window.location.href===\"http://localhost:5500/\"||window.location.href===\"https://letscoder2-0.firebaseapp.com/\"||window.location.href===\"https://letscoder2-0.web.app/\"){\r\n typeWriter();\r\n }\r\n if (profileInfo.imgUrl){\r\n-  let nameNode=`<img src=${profileInfo.imgUrl} onclick=\"window.location.href='progress.html'\" ><a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n-nameplace.innerHTML=nameNode;\r\n+  /* let nameNode=`<img src=${profileInfo.imgUrl} onclick=\"window.location.href='progress.html'\" ><a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n+nameplace.innerHTML=nameNode; */\r\n+let li=document.createElement(\"li\");\r\n+let a=document.createElement(\"a\");\r\n+let img=document.createElement(\"img\");\r\n+\r\n+let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n+img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n+img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n+a.appendChild(img);\r\n+a.setAttribute(\"href\",\"progress.html\");\r\n+a.appendChild(newUsertxt);\r\n+li.appendChild(a);\r\n+\r\n+document.querySelector(\"ul\").appendChild(li)\r\n+\r\n }\r\n else{\r\n \r\n   let li=document.createElement(\"li\");\r\n"
+                },
+                {
+                    "date": 1655987799857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,8 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n+img.style.width=\"50px\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n a.appendChild(newUsertxt);\r\n"
+                },
+                {
+                    "date": 1655987853384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,8 +263,9 @@\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n img.style.width=\"50px\"\r\n+img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n a.appendChild(newUsertxt);\r\n"
+                },
+                {
+                    "date": 1655987919397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"50px\"\r\n+img.style.width=\"20px\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n"
+                },
+                {
+                    "date": 1655987969515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"20px\"\r\n+img.style.width=\"10px\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n"
+                },
+                {
+                    "date": 1655987985008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"10px\"\r\n+img.style.width=\"15px\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n"
+                },
+                {
+                    "date": 1655987998081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"15px\"\r\n+img.style.width=\"20px\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n a.appendChild(img);\r\n a.setAttribute(\"href\",\"progress.html\");\r\n"
+                },
+                {
+                    "date": 1655988094532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -257,21 +257,21 @@\n if (profileInfo.imgUrl){\r\n   /* let nameNode=`<img src=${profileInfo.imgUrl} onclick=\"window.location.href='progress.html'\" ><a id='linkProfile' href='progress.html'>${profileInfo.userName}</a>`;\r\n nameplace.innerHTML=nameNode; */\r\n let li=document.createElement(\"li\");\r\n-let a=document.createElement(\"a\");\r\n+\r\n let img=document.createElement(\"img\");\r\n \r\n-let newUsertxt=document.createTextNode(` ${profileInfo.userName}`);\r\n+\r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n img.style.width=\"20px\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n-a.appendChild(img);\r\n-a.setAttribute(\"href\",\"progress.html\");\r\n-a.appendChild(newUsertxt);\r\n-li.appendChild(a);\r\n \r\n+\r\n+\r\n+li.appendChild(img);\r\n+\r\n document.querySelector(\"ul\").appendChild(li)\r\n \r\n }\r\n else{\r\n"
+                },
+                {
+                    "date": 1655988150219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n \r\n \r\n li.appendChild(img);\r\n \r\n-document.querySelector(\"ul\").appendChild(li)\r\n+document.querySelector(\"ul\").appendChild(li).style.backgroundColor=\"white\"\r\n \r\n }\r\n else{\r\n \r\n"
+                },
+                {
+                    "date": 1655988167938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"20px\"\r\n+img.style.width=\"10em\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988183067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"10em\"\r\n+img.style.width=\"3vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988194226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"3vw\"\r\n+img.style.width=\"10vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988206348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"10vw\"\r\n+img.style.width=\"8vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988238171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"8vw\"\r\n+img.style.width=\"6vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988435300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,11 +270,17 @@\n \r\n \r\n li.appendChild(img);\r\n \r\n-document.querySelector(\"ul\").appendChild(li).style.backgroundColor=\"white\"\r\n+let ul=document.querySelector(\"ul\").appendChild(li)\r\n+var styles={\r\n+  \"backgroundColor\":\"white\",\r\n+  \"paddingTop\":\"0px\",\r\n \r\n }\r\n+Object.assign(ul.style,styles)\r\n+\r\n+}\r\n else{\r\n \r\n   let li=document.createElement(\"li\");\r\n   let a=document.createElement(\"a\");\r\n"
+                },
+                {
+                    "date": 1655988484962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"6vw\"\r\n+img.style.width=\"5vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988619809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,9 @@\n \r\n let ul=document.querySelector(\"ul\").appendChild(li)\r\n var styles={\r\n   \"backgroundColor\":\"white\",\r\n-  \"paddingTop\":\"0px\",\r\n+  \"paddingTop\":\"-1%\"\r\n \r\n }\r\n Object.assign(ul.style,styles)\r\n \r\n"
+                },
+                {
+                    "date": 1655988684180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,9 @@\n \r\n let ul=document.querySelector(\"ul\").appendChild(li)\r\n var styles={\r\n   \"backgroundColor\":\"white\",\r\n-  \"paddingTop\":\"-1%\"\r\n+  \"paddingTop\":\"-2%\"\r\n \r\n }\r\n Object.assign(ul.style,styles)\r\n \r\n"
+                },
+                {
+                    "date": 1655988703231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,9 @@\n \r\n let ul=document.querySelector(\"ul\").appendChild(li)\r\n var styles={\r\n   \"backgroundColor\":\"white\",\r\n-  \"paddingTop\":\"-2%\"\r\n+  \r\n \r\n }\r\n Object.assign(ul.style,styles)\r\n \r\n"
+                },
+                {
+                    "date": 1655988713432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"5vw\"\r\n+img.style.width=\"4vh\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988739122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n let img=document.createElement(\"img\");\r\n \r\n \r\n img.setAttribute(\"src\",`${profileInfo.imgUrl}`)\r\n-img.style.width=\"4vh\"\r\n+img.style.width=\"4vw\"\r\n img.style.borderRadius=\"50%\"\r\n img.setAttribute(\"onclick\",`\"window.location.href='progress.html'\"`)\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1655988764666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,9 +273,9 @@\n \r\n let ul=document.querySelector(\"ul\").appendChild(li)\r\n var styles={\r\n   \"backgroundColor\":\"white\",\r\n-  \r\n+  \"paddingTop\":\"0%\"\r\n \r\n }\r\n Object.assign(ul.style,styles)\r\n \r\n"
+                },
+                {
+                    "date": 1655989409819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+require(\"@firebase/storage\")\r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc\",\r\n   authDomain: \"letscoder2-0.firebaseapp.com\",\r\n   databaseURL: \"https://letscoder2-0-default-rtdb.asia-southeast1.firebasedatabase.app\",\r\n"
+                },
+                {
+                    "date": 1655989721504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-require(\"@firebase/storage\")\r\n+import {} from 'firebase/storage' \r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc\",\r\n   authDomain: \"letscoder2-0.firebaseapp.com\",\r\n   databaseURL: \"https://letscoder2-0-default-rtdb.asia-southeast1.firebasedatabase.app\",\r\n"
+                },
+                {
+                    "date": 1655989781120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import {} from 'firebase/storage' \r\n+const firebase=require(\"firebase\")\r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc\",\r\n   authDomain: \"letscoder2-0.firebaseapp.com\",\r\n   databaseURL: \"https://letscoder2-0-default-rtdb.asia-southeast1.firebasedatabase.app\",\r\n"
+                },
+                {
+                    "date": 1655991347996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-const firebase=require(\"firebase\")\r\n+\r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc\",\r\n   authDomain: \"letscoder2-0.firebaseapp.com\",\r\n   databaseURL: \"https://letscoder2-0-default-rtdb.asia-southeast1.firebasedatabase.app\",\r\n"
                 }
             ],
             "date": 1655818831024,
