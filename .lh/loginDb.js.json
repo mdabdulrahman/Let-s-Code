@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 59,
+            "activePatchIndex": 64,
             "patches": [
                 {
                     "date": 1655818831024,
@@ -244,6 +244,26 @@
                 {
                     "date": 1655991347996,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-const firebase=require(\"firebase\")\r\n+\r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyD_8GZiznCmMPHudMbYO23j7PB1wSdqblc\",\r\n   authDomain: \"letscoder2-0.firebaseapp.com\",\r\n   databaseURL: \"https://letscoder2-0-default-rtdb.asia-southeast1.firebasedatabase.app\",\r\n"
+                },
+                {
+                    "date": 1655997222976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,9 +188,9 @@\n   }\r\n   else if(status==\"name\"){\r\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n-    a.setAttribute(\"href\",\"progress.html\");\r\n+    a.setAttribute(\"href\",`${window.location.origin}/progress.html`);\r\n    \r\n     let li=document.createElement(\"li\");\r\n     let nametxt=document.createTextNode(user.email);\r\n     a.appendChild(nametxt);\r\n"
+                },
+                {
+                    "date": 1655997659997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,8 +188,9 @@\n   }\r\n   else if(status==\"name\"){\r\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n+    a.setAttribute(\"target\",\"_blank\")\r\n     a.setAttribute(\"href\",`${window.location.origin}/progress.html`);\r\n    \r\n     let li=document.createElement(\"li\");\r\n     let nametxt=document.createTextNode(user.email);\r\n"
+                },
+                {
+                    "date": 1655997889104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,8 +189,9 @@\n   else if(status==\"name\"){\r\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n     a.setAttribute(\"target\",\"_blank\")\r\n+    var plink=window.location.origin\r\n     a.setAttribute(\"href\",`${window.location.origin}/progress.html`);\r\n    \r\n     let li=document.createElement(\"li\");\r\n     let nametxt=document.createTextNode(user.email);\r\n"
+                },
+                {
+                    "date": 1655997926619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,9 +190,9 @@\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n     a.setAttribute(\"target\",\"_blank\")\r\n     var plink=window.location.origin\r\n-    a.setAttribute(\"href\",`${window.location.origin}/progress.html`);\r\n+    a.setAttribute(\"href\",plink+`/progress.html`);\r\n    \r\n     let li=document.createElement(\"li\");\r\n     let nametxt=document.createTextNode(user.email);\r\n     a.appendChild(nametxt);\r\n"
+                },
+                {
+                    "date": 1656046578786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,9 +190,9 @@\n     let ul=document.querySelector(\"#menuLi\");\r\n     let a=document.createElement(\"a\");\r\n     a.setAttribute(\"target\",\"_blank\")\r\n     var plink=window.location.origin\r\n-    a.setAttribute(\"href\",plink+`/progress.html`);\r\n+    a.setAttribute(\"href\",`/progress.html`);\r\n    \r\n     let li=document.createElement(\"li\");\r\n     let nametxt=document.createTextNode(user.email);\r\n     a.appendChild(nametxt);\r\n"
                 }
             ],
             "date": 1655818831024,

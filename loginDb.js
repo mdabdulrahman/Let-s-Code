@@ -189,7 +189,9 @@ document.querySelector("ul").appendChild(li)
   else if(status=="name"){
     let ul=document.querySelector("#menuLi");
     let a=document.createElement("a");
-    a.setAttribute("href","progress.html");
+    a.setAttribute("target","_blank")
+    var plink=window.location.origin
+    a.setAttribute("href",`/progress.html`);
    
     let li=document.createElement("li");
     let nametxt=document.createTextNode(user.email);
